@@ -1,0 +1,60 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: pustakalay-backend
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pustakalay_ai
+    username: postgres
+    password: "08102004"
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: pustakalay-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
+        max.poll.interval.ms: 1800000
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        options:
+          model: qwen3:8b
+          temperature: 0.2
+      embedding:
+        options:
+          model: nomic-embed-text:latest
+    vectorstore:
+      qdrant:
+        host: localhost
+        port: 6334
+        collection-name: library_chunks
+        initialize-schema: true
+
+# Custom Application Properties
+app:
+  storage:
+    incoming-dir: D:\Library\Incoming
+    indexed-dir: D:\Library\Indexed
+  kafka:
+    topics:
+      indexing-jobs: pustakalay.indexing.jobs

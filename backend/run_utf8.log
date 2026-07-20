@@ -1,0 +1,279 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< ai.pustakalay:backend >------------------------
+[INFO] Building pustakalay-backend 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.3.2:run (default-cli) > test-compile @ backend >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ backend ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ backend ---
+[INFO] skip non existing resourceDirectory D:\AI-Dev\Pustakalay.ai\backend\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ backend ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.3.2:run (default-cli) < test-compile @ backend <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.3.2:run (default-cli) @ backend ---
+[INFO] Attaching agents: []
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2026-07-21T01:05:19.169+05:30  INFO 15500 --- [pustakalay-backend] [           main] a.pustakalay.backend.BackendApplication  : Starting BackendApplication using Java 17.0.12 with PID 15500 (D:\AI-Dev\Pustakalay.ai\backend\target\classes started by ASUS Vivobook in D:\AI-Dev\Pustakalay.ai\backend)
+2026-07-21T01:05:19.173+05:30  INFO 15500 --- [pustakalay-backend] [           main] a.pustakalay.backend.BackendApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-07-21T01:05:20.485+05:30  INFO 15500 --- [pustakalay-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-21T01:05:20.772+05:30  INFO 15500 --- [pustakalay-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 274 ms. Found 9 JPA repository interfaces.
+2026-07-21T01:05:23.336+05:30  INFO 15500 --- [pustakalay-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-21T01:05:23.354+05:30  INFO 15500 --- [pustakalay-backend] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-21T01:05:23.355+05:30  INFO 15500 --- [pustakalay-backend] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-07-21T01:05:23.454+05:30  INFO 15500 --- [pustakalay-backend] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-21T01:05:23.455+05:30  INFO 15500 --- [pustakalay-backend] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4215 ms
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2026-07-21T01:05:24.126+05:30  INFO 15500 --- [pustakalay-backend] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-21T01:05:24.371+05:30  INFO 15500 --- [pustakalay-backend] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-21T01:05:24.461+05:30  INFO 15500 --- [pustakalay-backend] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-07-21T01:05:25.288+05:30  INFO 15500 --- [pustakalay-backend] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-21T01:05:25.335+05:30  INFO 15500 --- [pustakalay-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-21T01:05:25.599+05:30  INFO 15500 --- [pustakalay-backend] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1136122a
+2026-07-21T01:05:25.601+05:30  INFO 15500 --- [pustakalay-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-21T01:05:25.658+05:30  WARN 15500 --- [pustakalay-backend] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-21T01:05:27.836+05:30  INFO 15500 --- [pustakalay-backend] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-21T01:05:27.956+05:30  INFO 15500 --- [pustakalay-backend] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-21T01:05:28.428+05:30  INFO 15500 --- [pustakalay-backend] [           main] a.p.b.common.service.FileStorageService  : Storage directories initialized: Incoming=D:\Library\Incoming, Indexed=D:\Library\Indexed
+2026-07-21T01:05:28.616+05:30  INFO 15500 --- [pustakalay-backend] [           main] a.p.b.qdrant.service.QdrantService       : Qdrant REST URL initialized to: http://localhost:6333
+2026-07-21T01:05:28.736+05:30  INFO 15500 --- [pustakalay-backend] [           main] a.p.b.qdrant.service.QdrantService       : Qdrant collection 'library_chunks' already exists
+2026-07-21T01:05:30.587+05:30  WARN 15500 --- [pustakalay-backend] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-21T01:05:31.687+05:30  INFO 15500 --- [pustakalay-backend] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-07-21T01:05:31.796+05:30  INFO 15500 --- [pustakalay-backend] [           main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = pustakalay-backend-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2026-07-21T01:05:31.946+05:30  INFO 15500 --- [pustakalay-backend] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2026-07-21T01:05:31.946+05:30  INFO 15500 --- [pustakalay-backend] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2026-07-21T01:05:31.946+05:30  INFO 15500 --- [pustakalay-backend] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1784576131945
+2026-07-21T01:05:32.336+05:30  INFO 15500 --- [pustakalay-backend] [backend-admin-0] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for pustakalay-backend-admin-0 unregistered
+2026-07-21T01:05:32.346+05:30  INFO 15500 --- [pustakalay-backend] [backend-admin-0] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2026-07-21T01:05:32.346+05:30  INFO 15500 --- [pustakalay-backend] [backend-admin-0] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-07-21T01:05:32.347+05:30  INFO 15500 --- [pustakalay-backend] [backend-admin-0] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2026-07-21T01:05:32.363+05:30  INFO 15500 --- [pustakalay-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-07-21T01:05:32.395+05:30  INFO 15500 --- [pustakalay-backend] [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-pustakalay-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = pustakalay-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 1800000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2026-07-21T01:05:32.441+05:30  INFO 15500 --- [pustakalay-backend] [           main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2026-07-21T01:05:32.442+05:30  INFO 15500 --- [pustakalay-backend] [nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-21T01:05:32.442+05:30  INFO 15500 --- [pustakalay-backend] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-21T01:05:32.444+05:30  INFO 15500 --- [pustakalay-backend] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-07-21T01:05:32.518+05:30  INFO 15500 --- [pustakalay-backend] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2026-07-21T01:05:32.518+05:30  INFO 15500 --- [pustakalay-backend] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2026-07-21T01:05:32.518+05:30  INFO 15500 --- [pustakalay-backend] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1784576132518
+2026-07-21T01:05:32.532+05:30  INFO 15500 --- [pustakalay-backend] [           main] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-pustakalay-group-1, groupId=pustakalay-group] Subscribed to topic(s): pustakalay.indexing.jobs
+2026-07-21T01:05:32.577+05:30  INFO 15500 --- [pustakalay-backend] [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-pustakalay-group-1, groupId=pustakalay-group] Cluster ID: KQYV6wf9Q9WJhuTQXhRQbw
+2026-07-21T01:05:32.578+05:30  INFO 15500 --- [pustakalay-backend] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-pustakalay-group-1, groupId=pustakalay-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-07-21T01:05:32.582+05:30  INFO 15500 --- [pustakalay-backend] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-pustakalay-group-1, groupId=pustakalay-group] (Re-)joining group
+2026-07-21T01:05:32.590+05:30  INFO 15500 --- [pustakalay-backend] [           main] a.pustakalay.backend.BackendApplication  : Started BackendApplication in 13.998 seconds (process running for 14.551)
+2026-07-21T01:05:32.607+05:30  INFO 15500 --- [pustakalay-backend] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-pustakalay-group-1, groupId=pustakalay-group] Request joining group due to: need to re-join with the given member-id: consumer-pustakalay-group-1-d8f77f3f-4e79-43bd-bf86-33c34c8487f6
+2026-07-21T01:05:32.608+05:30  INFO 15500 --- [pustakalay-backend] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-pustakalay-group-1, groupId=pustakalay-group] (Re-)joining group
+2026-07-21T01:05:35.620+05:30  INFO 15500 --- [pustakalay-backend] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-pustakalay-group-1, groupId=pustakalay-group] Successfully joined group with generation Generation{generationId=5, memberId='consumer-pustakalay-group-1-d8f77f3f-4e79-43bd-bf86-33c34c8487f6', protocol='range'}
+2026-07-21T01:05:35.630+05:30  INFO 15500 --- [pustakalay-backend] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-pustakalay-group-1, groupId=pustakalay-group] Finished assignment for group at generation 5: {consumer-pustakalay-group-1-d8f77f3f-4e79-43bd-bf86-33c34c8487f6=Assignment(partitions=[pustakalay.indexing.jobs-0, pustakalay.indexing.jobs-1, pustakalay.indexing.jobs-2])}
+2026-07-21T01:05:35.754+05:30  INFO 15500 --- [pustakalay-backend] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-pustakalay-group-1, groupId=pustakalay-group] Successfully synced group in generation Generation{generationId=5, memberId='consumer-pustakalay-group-1-d8f77f3f-4e79-43bd-bf86-33c34c8487f6', protocol='range'}
+2026-07-21T01:05:35.754+05:30  INFO 15500 --- [pustakalay-backend] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-pustakalay-group-1, groupId=pustakalay-group] Notifying assignor about the new Assignment(partitions=[pustakalay.indexing.jobs-0, pustakalay.indexing.jobs-1, pustakalay.indexing.jobs-2])
+2026-07-21T01:05:35.757+05:30  INFO 15500 --- [pustakalay-backend] [ntainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-pustakalay-group-1, groupId=pustakalay-group] Adding newly assigned partitions: pustakalay.indexing.jobs-0, pustakalay.indexing.jobs-1, pustakalay.indexing.jobs-2
+2026-07-21T01:05:35.786+05:30  INFO 15500 --- [pustakalay-backend] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition pustakalay.indexing.jobs-1 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2026-07-21T01:05:35.787+05:30  INFO 15500 --- [pustakalay-backend] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition pustakalay.indexing.jobs-2 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2026-07-21T01:05:35.788+05:30  INFO 15500 --- [pustakalay-backend] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition pustakalay.indexing.jobs-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2026-07-21T01:05:35.789+05:30  INFO 15500 --- [pustakalay-backend] [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : pustakalay-group: partitions assigned: [pustakalay.indexing.jobs-0, pustakalay.indexing.jobs-1, pustakalay.indexing.jobs-2]
+2026-07-21T01:08:16.876+05:30  INFO 15500 --- [pustakalay-backend] [nio-8080-exec-9] a.p.b.r.service.RetrievalService         : Retrieving context for query: 'Who is David Goggins?', documentId: null, category: null, topK: 5
+2026-07-21T01:08:17.350+05:30  INFO 15500 --- [pustakalay-backend] [nio-8080-exec-9] a.p.b.r.service.RetrievalService         : Vector search returned 5 results in 474 ms
+2026-07-21T01:08:17.381+05:30  INFO 15500 --- [pustakalay-backend] [nio-8080-exec-9] a.p.backend.chat.service.ChatService     : Calling LLM for session: 12729427-befd-4404-82b2-a530a5db0b9b
+2026-07-21T01:09:55.762+05:30  INFO 15500 --- [pustakalay-backend] [nio-8080-exec-5] a.p.b.r.service.RetrievalService         : Retrieving context for query: 'Why do people go to the temples for darshan', documentId: f3a3a332-eb04-469b-923a-bd0a282d520f, category: null, topK: 5
+2026-07-21T01:10:02.594+05:30  INFO 15500 --- [pustakalay-backend] [nio-8080-exec-5] a.p.b.r.service.RetrievalService         : Vector search returned 5 results in 6839 ms
+2026-07-21T01:10:03.046+05:30  INFO 15500 --- [pustakalay-backend] [nio-8080-exec-5] a.p.backend.chat.service.ChatService     : Calling LLM for session: 98780b11-0a0f-41c7-ae69-b44f009bc191
+2026-07-21T01:11:50.630+05:30  INFO 15500 --- [pustakalay-backend] [nio-8080-exec-1] a.p.b.r.service.RetrievalService         : Retrieving context for query: 'Why do people go to temples for darshan', documentId: f3a3a332-eb04-469b-923a-bd0a282d520f, category: null, topK: 5
+2026-07-21T01:11:51.359+05:30  INFO 15500 --- [pustakalay-backend] [nio-8080-exec-1] a.p.b.r.service.RetrievalService         : Vector search returned 5 results in 730 ms
+2026-07-21T01:11:51.539+05:30  INFO 15500 --- [pustakalay-backend] [nio-8080-exec-1] a.p.backend.chat.service.ChatService     : Calling LLM for session: 98780b11-0a0f-41c7-ae69-b44f009bc191
+2026-07-21T01:13:04.233+05:30  INFO 15500 --- [pustakalay-backend] [io-8080-exec-10] a.p.b.r.service.RetrievalService         : Retrieving context for query: 'who is eric myer', documentId: null, category: null, topK: 5
+2026-07-21T01:13:04.748+05:30  INFO 15500 --- [pustakalay-backend] [io-8080-exec-10] a.p.b.r.service.RetrievalService         : Vector search returned 5 results in 515 ms
+2026-07-21T01:13:04.780+05:30  INFO 15500 --- [pustakalay-backend] [io-8080-exec-10] a.p.backend.chat.service.ChatService     : Calling LLM for session: 12729427-befd-4404-82b2-a530a5db0b9b
+2026-07-21T01:14:32.854+05:30  INFO 15500 --- [pustakalay-backend] [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-pustakalay-group-1, groupId=pustakalay-group] Node -1 disconnected.
